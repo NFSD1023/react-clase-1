@@ -1,10 +1,10 @@
-function Button() {
-  const handleClick = () => {
-    alert('Hola Nuclio')
-  }
+
+
+
+function Button({onClick, children}) {
 
   return (
-    <button onClick={handleClick}>Click</button>
+    <button onClick={onClick}>{children}</button>
   )
 }
 

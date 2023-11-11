@@ -1,4 +1,6 @@
-const Counter = ({ count, setCount }) => {
+import Button from "./Button"
+
+const Counter = ({ count, setCount, counterId }) => {
   const add = () => {
     setCount(count + 1)
   }
@@ -6,7 +8,8 @@ const Counter = ({ count, setCount }) => {
   return (
     <>
       <span>{count}</span>
-      <button onClick={add}>Count</button>
+      {/* <button onClick={add}>Count</button> */}
+      <Button onClick={add}>{counterId}</Button>
     </>
   )
 }
